@@ -1,0 +1,10 @@
+@media screen and (max-width: auto) {
+
+    body
+    header
+    main {grid-template-columns: 1fr 1fr;}
+    footer
+    .wrapper {width: auto;
+    display: block;
+}
+}
