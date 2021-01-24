@@ -90,12 +90,18 @@ nav ul a:hover {
     color: var(--secondary-color)
 }
 
+img {
+    width: 400px;
+    border-radius: 15px;
+}
+
 @media screen and (max-width: 550px) {
 
     body,
     header,
     main,
     footer,
+    img,
     .active {
         display: block;
     }
