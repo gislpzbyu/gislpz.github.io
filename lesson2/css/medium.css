@@ -3,7 +3,8 @@
     body
     header
     main {grid-template-columns: 1fr 1fr;}
-    footer
+    footer,
+    img,
     .wrapper {width: auto;
     display: block;
 }

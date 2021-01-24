@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
+
+:root {
+    --primary-color: #A2D6F9;
+    --secondary-color: #1E96FC;
+    --accent1-color: #FFC600;
+    --accent2-color: #FFFFFF;
+    --other-color: #E5E5E5;
+    --heading-font: 'Merriweather Sans', sans-serif;
+    --paragraph-font: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    overflow: hidden scroll;
+    font-family: var(--paragraph-font);
+}
+
+header,
+main,
+footer,
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 1px;
+}
+
+header {
+    background-color: var(--accent1-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+main, nav {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+        margin: 1em;
+        font-family: var(--heading-font);
+    
+}
+
+p {
+    text-align: justify;
+    margin: 1em;
+    font-family: var(--paragraph-font);
+}
+
+footer {
+        background-color: var(--accent1-color);
+        font-family: var(--paragraph-font);
+        font-size: 20px;
+        padding: .8rem;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: .5rem;
+}
+
+nav {
+    display: inline;
+    padding: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 29px 10px 0 10px;
+    padding: 0;
+}
+
+nav ul a {
+    border-radius: 3px 3px 0 0;
+    color: var(--accent3-color);
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+}
+img {
+    border-radius: 15px;
+   width: 350px;
+}
+
+@media screen and (max-width: 550px) {
+
+    body,
+    header,
+    main,
+    footer,
+    img
+    {display: block;}
+}
