@@ -1,0 +1,15 @@
+@media only screen and (min-width: 550px) {
+  nav ul.hide {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+  button {
+    display: none;
+  }
+
+  #logo {
+    width: 125px;
+  }
+
+}
