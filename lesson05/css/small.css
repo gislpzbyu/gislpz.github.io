@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
+
+:root {
+    --primary-color: #A2D6F9;
+    --secondary-color: #1E96FC;
+    --accent1-color: #FFC600;
+    --accent2-color: #FFFFFF;
+    --other-color: #E5E5E5;
+    --heading-font: 'Merriweather Sans', sans-serif;
+    --paragraph-font: 'Work Sans', sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#logo {
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+.header {
+  margin-left: 5px;
+  justify-self: start;
+  text-align: left;
+}
+h1 {
+  font-size: 1.6rem;
+}
+.header p {
+  margin-top: -10px;
+  margin-left: 5px;
+}
+
+button {
+  font-size: 10vw;
+  background-color:var(--accent1-color);
+  color:var(--primary-color);
+  border: none;
+}
+nav {
+  background-color:var(--accent1-color);
+  margin-top: -15px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav a,
+nav li {
+  display: block;
+  color: var(--other-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: 100%;
+
+}
+
+nav a:hover {
+  background-color: #d2f898;
+  color: #202030;
+}
+nav ul.hide {
+  display: none;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    overflow: hidden scroll;
+    font-family: var(--paragraph-font);
+}
+
+header,
+main,
+footer,
+nav {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: justify;
+    padding: 1px;
+}
+
+header {
+    background-color: var(--accent1-color);
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+main, nav {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+    text-align: center;
+    background-color: var(--accent1-color);
+        font-family: var(--paragraph-font);
+        font-size: 20px;
+        padding: .8rem;
+}
+
+h1, h2, h3, h4 {
+        margin: 1em;
+        font-family: var(--heading-font);
+    
+}
+
+p {
+    text-align: center;
+    margin: 1em;
+    font-family: var(--paragraph-font);
+}
+
+nav ul a:hover {
+    background-color: var(--accent1-color);
+    color: var(--accent3-color);
+}
+
+main p {
+  background-color:var(--other-color);
+  border: solid black 1px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+main{
+  padding:0 1rem;
+}
+
+main h2 {
+  text-align: center;
+}
+
+.forecast {
+  text-align: center;
+  padding: 10px;
+}
+
+.forecast img {
+  width: 100%;
+}
+
+.article {
+text-align: justify;
+}
+
+.article p {
+  text-align: justify;
+  width: 90%;
+}
+.article img {
+   width: 100%;
+}
+
+.contact img {
+  text-align: left;
+  width: 400px;
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F2D492;
+  font-family: 'Roboto, Noto Sants, Baloo';
+  font-size: 20px;
+  padding: .8rem;
+}
+
+.contact {
+  grid-row: 3/3;
+}
+
+.contact img {
+  width: 100%;
+}
+.social {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+.social img {
+  width: 50px;
+}
+
+.copyright {
+  grid-column: 1/4;
+  align-items: center;
+  padding-left: 100px;
+}
+.hero p {
+  float: right;
+  width: 30%;
+
+}
+.hero img {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.hero p{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.article img {
+  z-index: 100;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  top: 0px;
+  width: 300px;
+}
+
+a:focus,
+    .active {
+        color: black;
+        border-bottom: 1px solid #F2BA49;
+        padding-bottom: .2rem;
+
+    }
+
+
+    header nav ul li a:hover {
+        color: black;
+    }
+  
+
+      
+      .bannerSaturday {
+        display: none;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: var(--accent1-color);
+        color: white;
+    }
+    
+    .bannerSaturday p {
+        margin: 0;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 550px) {
+
+      body,
+      header,
+      main,
+      footer,
+      .article, .banner-sat, .contact, .forecast, .header, .hero, .social {
+          display: block;
+      }
+  }
