@@ -208,24 +208,9 @@ text-align: justify;
   align-items: center;
   padding-left: 100px;
 }
-.hero p {
-  float: right;
-  width: 30%;
 
-}
-.hero img {
-  width: 100%;
-}
-
-.hero {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-.hero p {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.weatherSummary {
+min-height: 20%;
 }
 
 .article img {
@@ -292,7 +277,7 @@ a:focus,
   header,
   main,
   footer,
-  .article, .bannerSaturday, .contact, .forecast, .header, .hero, .social {
+  .article, .bannerSaturday, .contact, .forecast, .header, .hero, .social, .weatherSummary{
       display: block;
   }
 }
@@ -365,3 +350,5 @@ box-shadow: 0 0 30px #111;
   line-height: 20px;
   margin: 0;
 }
+
+
