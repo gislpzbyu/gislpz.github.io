@@ -23,12 +23,14 @@
       9:00 AM Saturday at the city park.
     </p>
   </div>
-  <header>
-    <img id="logo" src="images/logo.png" alt="Weather Etc. logo" />
-    <section class="header">
+  <header><section>
+    <picture id="logo">
+      <source media="(max-width: 37.5em)" srcset="images/logosmall.png" />
+      <img src="images/logosmall.png" alt="logo" />
+    </picture>
+  </section>
       <h1>Weather World</h1>
-      <p>Plan your days</p>
-    </section>
+      <p>Plan your days</p>   
     <button onclick="toggle()">&#9776;</button>
   </header>
   <nav>
