@@ -79,6 +79,7 @@ nav, .bannerSaturday, body {
     border-radius: 15px;
     text-align: justify;
     padding: 1px;
+    text-align: center;
 }
 
 .weatherSummary {
