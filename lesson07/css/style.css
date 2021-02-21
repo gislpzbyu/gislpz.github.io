@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Quicksand");
+
+:root {
+  --primary-color: #a2d6f9;
+  --secondary-color: #1e96fc;
+  --accent1-color: #ffc600;
+  --accent2-color: #ffffff;
+  --other-color: #e5e5e5;
+  --heading-font: "Merriweather Sans", sans-serif;
+  --paragraph-font: "Work Sans", sans-serif;
+}
+
+header {
+  background-color: var(--accent1-color);
+  text-align: center;
+  font-family: var(--heading-font);
+}
+
+.img {
+  width: 100%;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-size: 16px;
+  overflow: hidden scroll;
+  font-family: var(--paragraph-font);
+}
+
+.bannerSaturday p {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.2em;
+  background-color: var(--accent1-color);
+  color: white;
+
+  border-radius: 15px !important;
+}
+
+#logo {
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  padding: 0.8rem !important;
+}
+
+header,
+main,
+footer,
+nav,
+.bannerSaturday,
+body {
+  border-radius: 15px;
+  text-align: justify;
+  text-align: center;
+}
+
+.bannerSaturday {
+  text-align: center;
+  font-size: 1.5em;
+  background-color: var(--accent1-color);
+  color: white;
+}
+
+button {
+  font-size: 10vw;
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+/* ==================== NAV ====================== */
+
+nav {
+  background-color: var(--accent1-color);
+  margin-top: -15px;
+}
+
+main,
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+nav a,
+nav li {
+  display: block;
+  color: var(--other-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+a:focus,
+.active {
+  background-color: var(--accent1-color);
+  color: black;
+  border-bottom: 1px solid var(--accent2-color);
+  padding-bottom: 0.2rem;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+.navigation_ul {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navigation_ul.hide {
+  display: none !important;
+}
+
+.pic-hover:hover {
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #logo {
+    width: 125px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bannerSaturday {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .navigation_ul {
+    display: flex;
+    padding: 1em;
+  }
+
+  nav ul.hide {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
