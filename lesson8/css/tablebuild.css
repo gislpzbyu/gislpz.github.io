@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
 :root {
@@ -9,7 +9,7 @@
     --foot: #7fb9c2;
   
 
-    --font: 'Work Sans', sans-serif;
+    --font: 'Ubuntu', sans-serif;
 }
 table{
     border-collapse: collapse;
@@ -37,7 +37,12 @@ table tbody th{
     background-color: var(--header);
     color: var(--primary);
 }
-table tbody tr{
+table tbody .row{
     background-color: var(--secondary);
+}
+
+tbody .row:nth-child(even) {
+    /* background-color: #e7ffed; */
+    background-color: #e7f0ed;
 }
 
