@@ -9,10 +9,7 @@
     />
     <meta name="author" content="Giselle Lopez Garcia" />
     <title>Weather World</title>
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="styleesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Sanchez&display=swap"
@@ -54,7 +51,12 @@
         <div class="personalInfo">
           <h3>Personal Info</h3>
           <label for="name">Full name:</label>
-          <input type="text" name="fullname" pattern="[A-Za-z]{5}" required /><br />
+          <input
+            type="text"
+            name="fullname"
+            pattern="[A-Za-z]{5}"
+            required
+          /><br />
           <label for="email">Email:</label>
           <input
             type="email"
@@ -137,7 +139,7 @@
             ></textarea>
           </div>
         </div>
-        <button type="submit" style="display: inline !important">Send</button>
+        <button id="send" type="submit" style="display: inline !important">Send</button>
       </form>
     </main>
     <footer>
