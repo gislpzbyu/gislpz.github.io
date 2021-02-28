@@ -69,8 +69,8 @@ nav,
 .bannerSaturday,
 body {
   border-radius: 15px;
-  text-align: justify;
-  text-align: center;
+  /* text-align: justify;
+  text-align: center; */
 }
 
 .bannerSaturday {
@@ -159,10 +159,6 @@ header nav ul li a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-
-
-
-
   button {
     display: none;
   }
@@ -179,7 +175,8 @@ header nav ul li a:hover {
   }
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 @media (min-width: 1200px) {
   .container {
@@ -187,14 +184,8 @@ header nav ul li a:hover {
   }
 }
 
-.personalInfo input {
-  padding: 10px;
-
-}
-
-label {
-  display: inline-block;
-}
+/* 
+ */
 
 #send {
   border-radius: 10px;
@@ -206,4 +197,25 @@ label {
   font-size: 1.8em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+.form-container {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  display: inline-block;
+  text-align: left !important;
+  margin-bottom: 0.5em;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
 }
