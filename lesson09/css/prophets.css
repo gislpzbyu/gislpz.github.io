@@ -1,0 +1,44 @@
+:root {
+    --accent1-color: #ffc600;
+    --other-color: #e5e5e5;
+  }
+  
+body{
+    text-align: center;
+}
+ 
+div.cards{
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center; 
+}
+
+div.cards section {
+    background-color: var(--accent1-color);
+    margin: 10px auto;
+}
+
+
+img{
+    width: auto;
+    height: 300px;
+    padding: 10px;
+}
+
+
+
+@media only screen and (min-width: 35rem) {
+    div.cards{
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    div.cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    header {
+        font-size: 1.2rem;
+    }
+}
