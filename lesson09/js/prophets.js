@@ -8,18 +8,16 @@ fetch(requestURL)
     const prophets = jsonObject['prophets'];
     for (var i = 0; i < prophets.length; i++ ) {
 
-        var card = document.createElement('section');
-        var h2 = document.createElement('h2');
-        var birthday = document.createElement('p');
-        var birthplace = document.createElement('p');
-        var image = document.createElement('img') ;
-
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
         birthday.innerHTML = 'Date of Birth: ' + prophets[i].birthdate;
         birthplace.innerHTML = 'Place of Birth: ' + prophets[i].birthplace;
         image.setAttribute('src', prophets[i].imageurl);
         image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + (i+1));
-
+        var card = document.createElement('section');
+        var h2 = document.createElement('h2');
+        var birthday = document.createElement('p');
+        var birthplace = document.createElement('p');
+        var image = document.createElement('img') ;
         card.appendChild(h2);
         card.appendChild(birthday);
         card.appendChild(birthplace);
