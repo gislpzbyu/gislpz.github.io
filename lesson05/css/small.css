@@ -260,3 +260,35 @@ a:focus,
           display: block;
       }
   }
+
+  .contact img {
+    text-align: left;
+    width: 400px;
+  }
+  
+  .contact {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F2D492;
+    font-family: 'Roboto, Noto Sants, Baloo';
+    font-size: 20px;
+    padding: .8rem;
+  }
+  
+  .contact {
+    grid-row: 3/3;
+  }
+  
+  .contact img {
+    width: 100%;
+  }
+  .social {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  
+  .social img {
+    width: 50px;
+  }
+  
