@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis|Quicksand");
+/*COLORS */
+:root {
+  --primary-color: #a2d6f9;
+  --secondary-color: #1e96fc;
+  --accent1-color: #ffc600;
+  --accent2-color: #ffffff;
+  --other-color: #e5e5e5;
+  --heading-font: "Merriweather Sans", sans-serif;
+  --paragraph-font: "Work Sans", sans-serif;
+}
+
+header {
+    background-color: var(--accent1-color);
+    text-align: center;
+    font-family: var(--heading-font);
+  }
