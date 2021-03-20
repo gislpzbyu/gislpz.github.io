@@ -60,33 +60,114 @@
     </div>
     </section>
     <div class="forecast">
-      <div class="dayofweekC">
-        <p><span id="dayofweek0"></span></p>
-        <span id="forecast0"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
 
-      <div class="dayofweekC">
-        <p><span id="dayofweek1"></span></p>
-        <span id="forecast1"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
+      <style>
+        .daily-weather {
+          display: flex;
 
-      <div class="dayofweekC">
-        <p><span id="dayofweek2"></span></p>
-        <span id="forecast2"></span>&deg; F
-        <img src="images/forecast.png" />
+          /* flex-wrap: wrap; */
+        }
+        
+        .dayofweekC {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+
+          /* width: 50%; */
+          background-color: #F17D65;
+          box-sizing: border-box;
+        }
+        
+        .daily-label {}
+        .daily-weather {}
+        .daily-image {
+          width: 50px !important;
+        }
+
+        .daily-label {
+          margin: 0 !important;
+        }
+
+        
+
+      </style>
+
+      <!-- !Hello -->
+      <div class="daily-weather">
+
+        <div class="dayofweekC">
+          <h3 class="daily-label">
+            <span id="dayofweek0"></span>
+          </h3>
+          <span class="daily-temperature" id="forecast0"></span>&deg; F
+          <img class="daily-image" src="images/forecast.png" />
+        </div>
+
+        <div class="dayofweekC">
+          <h3 class="daily-label">
+            <span class="daily-label" id="dayofweek1"></span>
+          </h3>
+          <span class="daily-temperature" id="forecast1"></span>&deg; F
+          <img class="daily-image" src="images/forecast.png" />
+        </div>
+
+        <div class="dayofweekC">
+          <h3 class="daily-label">
+            <span class="daily-label" id="dayofweek2"></span>
+          </h3>
+          <span class="daily-temperature" id="forecast2"></span>&deg; F
+          <img class="daily-image" src="images/forecast.png" />
+        </div>
+
+        <div class="dayofweekC">
+          <h3 class="daily-label">
+            <span class="daily-label" id="dayofweek3"></span>
+          </h3>
+          <span class="daily-temperature" id="forecast3"></span>&deg; F
+          <img class="daily-image" src="images/forecast.png" />
+        </div>
+
+        <div class="dayofweekC">
+          <h3 class="daily-label">
+            <span class="daily-label" id="dayofweek4"></span>
+          </h3>
+          <span class="daily-temperature" id="forecast4"></span>&deg; F
+          <img class="daily-image" src="images/forecast.png" />
+        </div>
+
+
+        <!-- <div class="dayofweekC">
+          <p><span id="dayofweek0"></span></p>
+          <span id="forecast0"></span>&deg; F
+          <img src="images/forecast.png" />
+        </div> -->
+        <!-- <div class="dayofweekC">
+          <p><span id="dayofweek1"></span></p>
+          <span id="forecast1"></span>&deg; F
+          <img src="images/forecast.png" />
+        </div>
+  
+        <div class="dayofweekC">
+          <p><span id="dayofweek2"></span></p>
+          <span id="forecast2"></span>&deg; F
+          <img src="images/forecast.png" />
+        </div>
+        <div class="dayofweekC">
+          <p><span id="dayofweek3"></span></p>
+          <span id="forecast3"></span>&deg; F
+          <img src="images/forecast.png" />
+        </div>
+        <div class="dayofweekC">
+          <p><span id="dayofweek4"></span></p>
+          <span id="forecast4"></span>&deg; F
+          <img src="images/forecast.png" />
+        </div> -->
       </div>
-      <div class="dayofweekC">
-        <p><span id="dayofweek3"></span></p>
-        <span id="forecast3"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
-      <div class="dayofweekC">
-        <p><span id="dayofweek4"></span></p>
-        <span id="forecast4"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
+      <!-- !Hello -->
+
+      
     <section class="town-events">
       <div class="events"></div>
   </section>
