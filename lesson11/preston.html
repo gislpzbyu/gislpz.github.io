@@ -59,57 +59,41 @@
         <p>Wind Speed: <span id="windSpeed"></span> mph</p>
     </div>
     </section>
-    <table class="forecast">
-      <tr>
-        <th class="dayofweekC">
-          <p><span id="dayofweek0"></span></p>
-        </th>
+    <div class="forecast">
+      <div class="dayofweekC">
+        <p><span id="dayofweek0"></span></p>
+        <span id="forecast0"></span>&deg; F
+        <img src="images/forecast.png" />
+      </div>
 
-        <th class="dayofweekC">
-          <p><span id="dayofweek1"></span></p>
-        </th>
+      <div class="dayofweekC">
+        <p><span id="dayofweek1"></span></p>
+        <span id="forecast1"></span>&deg; F
+        <img src="images/forecast.png" />
+      </div>
 
-        <th class="dayofweekC">
-          <p><span id="dayofweek2"></span></p>
-        </th>
-        <th class="dayofweekC">
-          <p><span id="dayofweek3"></span></p>
-        </th>
-        <th class="dayofweekC">
-          <p><span id="dayofweek4"></span></p>
-        </th>
-      </tr>
-
-      <tr>
-        <td><img src="images/forecast.png" /></td>
-
-        <td><img  src="images/forecast.png" /></td>
-
-        <td><img  src="images/forecast.png" /></td>
-        <td><img  src="images/forecast.png" /></td>
-
-        <td><img  src="images/forecast.png" /></td>
-      </tr>
-
-      <tr>
-        <td><span id="forecast0"></span>&deg; F</td>
-
-        <td><span id="forecast1"></span>&deg; F</td>
-        <td><span id="forecast2"></span>&deg; F</td>
-        <td><span id="forecast3"></span>&deg; F</td>
-        <td><span id="forecast4"></span>&deg; F</td>
-
-        <td></td>
-      </tr>
-    </table>
-    
+      <div class="dayofweekC">
+        <p><span id="dayofweek2"></span></p>
+        <span id="forecast2"></span>&deg; F
+        <img src="images/forecast.png" />
+      </div>
+      <div class="dayofweekC">
+        <p><span id="dayofweek3"></span></p>
+        <span id="forecast3"></span>&deg; F
+        <img src="images/forecast.png" />
+      </div>
+      <div class="dayofweekC">
+        <p><span id="dayofweek4"></span></p>
+        <span id="forecast4"></span>&deg; F
+        <img src="images/forecast.png" />
+      </div>
     <section class="town-events">
       <div class="events"></div>
   </section>
 
     <div class="article">
-      <h2>Article Title</h2>
       <div class="article_body">
+        <h2>Article Title</h2>
         <p class="article_paragraph">
           <img class="article_image" src="images/villa.jpg" alt="article" />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi
@@ -134,7 +118,7 @@
       </div>
     </div>
     <div class="contact">
-      <img src="images/villa.jpg" alt="map" />
+      <img id= "map" src="images/villa.jpg" alt="map" />
       <br />
       📍 Temple Inn & Suites Headquarters
       <br />
