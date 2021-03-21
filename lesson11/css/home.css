@@ -413,6 +413,7 @@ footer {
 
 /*Container*/
 .container {
+  background-color: var(--accent2-color);
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 2em;
