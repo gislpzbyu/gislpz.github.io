@@ -245,10 +245,6 @@ nav ul.hide {
   box-sizing: border-box;
 }
 
-.daily-label {
-}
-.daily-weather {
-}
 .daily-image {
   width: 50px !important;
 }
@@ -306,7 +302,7 @@ nav ul.hide {
 
 .article_image {
   float: right;
-  padding: 10px;
+  padding: 5px;
 }
 
 .article {

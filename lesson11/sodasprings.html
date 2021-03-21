@@ -20,15 +20,19 @@
       9:00 AM Saturday at the city park.
     </p>
   </div>
+  
   <header>
+    <div class="bannerSaturday">
+      <p>
+        Saturday = Preston Pancakes in the park! <br />
+        9:00 AM Saturday at the city park.
+      </p>
+    </div>
+    <img src="images/logosmall.png" alt="logo" />
     <section class="header">
-      <picture id="logo">
-        <source media="(max-width: 37.5em)" srcset="images/logosmall.png" />
-        <img src="images/logosmall.png" alt="logo" />
-      </picture>
+      <h1>Weather World</h1>
+      <p>Plan your days</p>
     </section>
-    <h1>Weather World</h1>
-    <p>Plan your days</p>
     <button onclick="toggle()">&#9776;</button>
   </header>
   <nav>
@@ -58,77 +62,103 @@
         <p>Humidity: <span id="humidity"></span>%</p>
         <p>Wind Speed: <span id="windSpeed"></span> mph</p>
 
-        <script src="js/weatherapi-preston.js"></script>
     </div>
     </section>
-    <div class="forecast">
-      <div class="dayofweekC">
-        <p><span id="dayofweek0"></span></p>
-        <span id="forecast0"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
+         <!-- !Hello -->
+         <div class="daily-weather">
 
-      <div class="dayofweekC">
-        <p><span id="dayofweek1"></span></p>
-        <span id="forecast1"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
-
-      <div class="dayofweekC">
-        <p><span id="dayofweek2"></span></p>
-        <span id="forecast2"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
-      <div class="dayofweekC">
-        <p><span id="dayofweek3"></span></p>
-        <span id="forecast3"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
-      <div class="dayofweekC">
-        <p><span id="dayofweek4"></span></p>
-        <span id="forecast4"></span>&deg; F
-        <img src="images/forecast.png" />
-      </div>
-    <section class="town-events">
-      <div class="events"></div>
-  </section>
-   
+          <div class="dayofweekC">
+            <h3 class="daily-label">
+              <span id="dayofweek0"></span>
+            </h3>
+            <span class="daily-temperature" id="forecast0"></span>&deg; F
+            <img class="daily-image" src="images/forecast.png" />
+          </div>
+  
+          <div class="dayofweekC">
+            <h3 class="daily-label">
+              <span class="daily-label" id="dayofweek1"></span>
+            </h3>
+            <span class="daily-temperature" id="forecast1"></span>&deg; F
+            <img class="daily-image" src="images/forecast.png" />
+          </div>
+  
+          <div class="dayofweekC">
+            <h3 class="daily-label">
+              <span class="daily-label" id="dayofweek2"></span>
+            </h3>
+            <span class="daily-temperature" id="forecast2"></span>&deg; F
+            <img class="daily-image" src="images/forecast.png" />
+          </div>
+  
+          <div class="dayofweekC">
+            <h3 class="daily-label">
+              <span class="daily-label" id="dayofweek3"></span>
+            </h3>
+            <span class="daily-temperature" id="forecast3"></span>&deg; F
+            <img class="daily-image" src="images/forecast.png" />
+          </div>
+  
+          <div class="dayofweekC">
+            <h3 class="daily-label">
+              <span class="daily-label" id="dayofweek4"></span>
+            </h3>
+            <span class="daily-temperature" id="forecast4"></span>&deg; F
+            <img class="daily-image" src="images/forecast.png" />
+          </div>
+  
+  
+          <!-- <div class="dayofweekC">
+            <p><span id="dayofweek0"></span></p>
+            <span id="forecast0"></span>&deg; F
+            <img src="images/forecast.png" />
+          </div> -->
+          <!-- <div class="dayofweekC">
+            <p><span id="dayofweek1"></span></p>
+            <span id="forecast1"></span>&deg; F
+            <img src="images/forecast.png" />
+          </div>
+    
+          <div class="dayofweekC">
+            <p><span id="dayofweek2"></span></p>
+            <span id="forecast2"></span>&deg; F
+            <img src="images/forecast.png" />
+          </div>
+          <div class="dayofweekC">
+            <p><span id="dayofweek3"></span></p>
+            <span id="forecast3"></span>&deg; F
+            <img src="images/forecast.png" />
+          </div>
+          <div class="dayofweekC">
+            <p><span id="dayofweek4"></span></p>
+            <span id="forecast4"></span>&deg; F
+            <img src="images/forecast.png" />
+          </div> -->
+        </div>
+        <!-- !Hello -->
+  
+        
   <div class="article">
     <div class="article_body">
-      <h2>Article Title</h2>
+      <h2>Average Weather in Soda Springs Idaho, United States</h2>
       <p class="article_paragraph">
-        <img class="article_image" src="images/villa.jpg" alt="article" />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi
-        molestias recusandae cumque eveniet libero harum possimus illo
-        voluptas necessitatibus aliquid eos, quo, itaque temporibus officiis
-        non iste minus placeat quam? Quis hic architecto veniam atque,
-        molestiae porro voluptatum distinctio deleniti aliquam, ullam iste
-        unde, doloremque laborum minima odio sequi fugit voluptatem
-        perferendis nemo labore sit explicabo ex soluta iure? Impedit
-        quaerat ullam architecto suscipit nostrum assumenda nemo ratione,
-        sequi cumque blanditiis asperiores totam repellat ducimus id eveniet
-        in distinctio sapiente aut rem molestiae. Facere voluptatem ea eos
-        quas ipsum dolorum, deleniti tenetur ipsa beatae ex dolores nesciunt
-        optio. Distinctio ipsam consequuntur ratione perferendis blanditiis
-        voluptatum deleniti facere molestias maiores, sunt repellendus.
-        Officiis, dolor! Accusantium reiciendis fugit quia accusamus
-        voluptas rem maiores quisquam! Eum odit nemo est! Laboriosam dolorem
-        maiores quas nam ex asperiores ducimus, dolore temporibus
-        consequatur sit est numquam, delectus totam nesciunt quisquam non
-        placeat dignissimos facilis repudiandae rerum deleniti fuga.
+        <img class="article_image" src="images/sodasprings.jpg" alt="article" />
+        In Soda Springs, the summers are hot, dry, and mostly clear and the winters are freezing, snowy, and partly cloudy. During the course of the year, the temperature generally ranges from -12 ° C to 27 ° C and rarely drops below -21 ° C or rises above 31 ° C.
+<br>  
+        Based on the tourism score, the best time of year to visit Soda Springs for hot-weather activities is from early July to mid-August.
       </p>
     </div>
   </div>
     <div class="contact">
       <img src="images/villa.jpg" alt="map" />
       <br />
-      📍 Temple Inn & Suites Headquarters
+      📍 Weather World
       <br />
-      355 Wisconsin Avenue <br />
-      Bethseda, MD 20814 <br />
+      355 Main Avenue <br />
+      Preston, ID 28005 <br />
       ☎ 215-829-9999
       <br />
-      ✉ info@templinn.com
+      ✉ weather@world.com
       <div class="social">
         <a href="https://www.facebook.com" title="This links to our Facebook Page. Follow Us."><img
             src="images/facebook-icon.png" alt="Facebook Icon" /></a>
