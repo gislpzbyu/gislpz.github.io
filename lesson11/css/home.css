@@ -82,11 +82,23 @@ nav li {
 }
 
 nav a:hover {
-  background-color: #d2f898;
+  background-color: var(--accent2-color);
   color: #202030;
 }
 nav ul.hide {
   display: none;
+}
+
+a:focus,
+.active {
+  background-color: var(--accent2-color);
+  color: black;
+  border-bottom: 1px solid var(--accent2-color);
+  padding-bottom: 0.2rem;
+}
+
+header nav ul li a:hover {
+  color: black;
 }
 
 /*Banner Saturday */
