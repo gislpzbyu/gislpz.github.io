@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/logo.png" alt="logo" />
+    <section class="header">
+      <h1>Chamber Of Commerce</h1>
+      <p>Villahermosa, Tabasco</p>
+    </section>
+  </header>
+    <div>
+      <nav class="nav">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="join.html" >Join</a></li>
+        <li><a href="contact.html" >Contact</a></li>
+      </nav>
+  </div>
+  <main>
+    <form method="get" action="/lesson8/thanks.html" class="grid">
+      <div class="form-container">
+        <div class="personalInfo">
+          <h3>Company Info</h3>
+          <label for="name">Name:</label>
+          <input id="name"
+            type="text"
+            name="fullname" minlength="5" pattern="[A-Za-Z]" 
+            required
+          /><br />
+          <label for="email">Email:</label>
+          <input id="email"
+            type="email"
+            name="email"
+            placeholder="sarahSmith@example.com"
+          /><br/>
+          <label for="phone">Phone Number:</label>
+          <input id="phone" type="tel" name="phonenumber" required /> <br />
+          <div class="form-group">
+            <label for="city">Street:</label>
+  <input type="street" 
+         class="form-control" 
+         id="autocomplete" 
+         placeholder="Street">
+         <br />
+         <label for="city">City:</label>
+  <input type="city" 
+         class="form-control" 
+         id="inputCity" 
+         placeholder="City">
+         <br />
+         <label for="city">State:</label>
+  <input type="state" 
+         class="form-control" 
+         id="inputState" 
+         placeholder="State">
+         <br />
+         <label for="city">Zip:</label>
+  <input type="zip" 
+         class="form-control" 
+         id="inputZip" 
+         placeholder="Zip">
+         <br />
+         <label for="city">Country:</label>
+  <input type="country" 
+         class="form-control" 
+         id="inputCountry" 
+         placeholder="Country">
+            <label>Bussiness Description</label><br />
+            <textarea
+              id="texarea"
+              name="comments"
+              rows="5"
+              cols="33"
+            ></textarea>
+</div>
+        <div class="stormInfo">
+          <h3>Owner Info</h3>
+          <form method="get" action="/lesson8/thanks.html" class="grid">
+            <div class="form-container">
+              <div class="personalInfo">
+                <label for="name">Full name:</label>
+                <input id="name"
+                  type="text"
+                  name="fullname"
+                /><br />
+                <label for="email">Email:</label>
+                <input id="email"
+                  type="email"
+                  name="email"
+                  placeholder="sarahSmith@example.com"
+                /><br/>
+                <label for="phone">Phone Number:</label>
+                <input id="phone" type="tel" name="phonenumber" required /> <br />
+          <div class="additionalInfo">
+            <h3>Additional Information</h3>
+            <label>Comments</label><br />
+            <textarea
+              id="texarea"
+              name="comments"
+              rows="5"
+              cols="33"
+            ></textarea>
+            <div class="membershipLevel">Membership Level</div>
+            <label class="membership"><input type="radio" name="membership-level" value="Non-Profit">Non-Profit ($100)</label>
+            <label class="membership"><input type="radio" name="membership-level" value="Bronze">Bronze ($200)</label>
+            <label class="membership"><input type="radio" name="membership-level" value="Silver">Silver ($400)</label>
+            <label class="membership"><input type="radio" name="membership-level" value="Gold">Gold ($1000)</label>
+          </div>
+          <div class="member-perks">
+            <table class="perks-table">
+                <tr>
+                    <th>Perks</th>
+                    <th>Non-Profit ($100)</th>
+                    <th>Bronze ($200)</th>
+                    <th>Silver ($400)</th>
+                    <th>Gold ($1000)</th>
+                </tr>
+                <tr>
+                    <td>Directory Listing</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Business Trainings</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Social Media Posts</td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Luncheon Tickets</td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Sponsorship Opportunities</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+            </table>
+        </div>
+        </div>
+        <button id="send" type="submit" style="display: inline !important">
+          Send
+        </button>
+      </div>
+    </form>
+  </main>
+  <footer>
+      &copy; 2021 | Giselle Lopez | Villahermosa |
+      <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      <br />
+      <span id="currentday"></span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <meta>
+       <title>Make Full Name</title>
+       <script>
+
+           function makeFullname (givenName, familyName){
+            let output;
+            output = familyName + " , " + givenName;
+            return output;
+           }
+           function DisplayFuntion (){
+            let result;
+            result1= makeFullname ("Theodore","Roosevelt")
+            result2= makeFullname ("Obama","Barak")
+            result3= makeFullname ("Donald","Trump")
+            document.write (result1);
+            document.write("<br>");
+            document.write (result2);
+            document.write("<br>");
+            document.write (result3);
+        }
+           
+       </script>
+   </head> 
+   <body>
+       <h1>Make Full Name</h1>
+       <button type="text" onclick="DisplayFuntion()" value= "result">Full Name</button>
+   </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="images/logo.png" alt="logo" />
+    <section class="header">
+      <h1>Chamber Of Commerce</h1>
+      <p>Villahermosa, Tabasco</p>
+    </section>
+  </header>
+    <div>
+      <nav class="nav">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="directory.html" >Directory</a></li>
+        <li><a href="join.html" >Join</a></li>
+        <li><a href="contact.html" >Contact</a></li>
+      </nav>
+  </div>
+    <main class="container">
+    <section class="hero">
+      <picture class="hero-img">
+        <img src="images/hero.jpg" alt="sunny day" />
+      </picture>
+      <div class="home-contact">
+        <form method="get" action="thanks.html">
+            <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5}" required></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="textA top">Comments <textarea name="comments"></textarea></label>
+                
+            <input type="submit" value="Contact Us" class="submitB">
+        </form>
+
+  </div>
+    </main>
+    <div class="contact">
+      <img class="map" src="images/map.jpg" alt="map" />
+      <br />
+      📍 Weather World
+      <br />
+      355 Main Avenue <br />
+      Preston, ID 28005 <br />
+      ☎ 215-829-9999
+      <br />
+      ✉ weather@world.com
+      
+      <div class="social">
+        <a href="https://www.facebook.com" title="This links to our Facebook Page. Follow Us."><img
+            src="images/facebook-icon.png" alt="Facebook Icon" /></a>
+        <a href="https://www.twitter.com" title="This links to our Twitter Account. Follow Us."><img
+            src="images/twitter-icon.png" alt="Twitter Icon" /></a>
+        <a href="https://www.instagram.com" title="This links to our Instagram Account. Follow Us."><img
+            src="images/instagram-icon.png" alt="Instagram Icon" /></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+      &copy; 2021 | Giselle Lopez | Villahermosa |
+      <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
+      <br />
+      <span id="currentday"></span>
+    </footer>
+</body>
+
+</html>
