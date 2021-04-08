@@ -1,12 +1,11 @@
 {
     "businesses": [
         {
-            "name": "Alpha Graphics",
-            "logo": "alpha-logo.png",
-            "website": "https://www.alphagraphics.com/",
-            "address1": "2945 South West Temple",
-            "address2": "Salt Lake City, UT 84115",
-            "phone": "(801) 461-0500"
+            "name": "Kairos Gi",
+            "logo": "kairos.png",
+            "website": "https://www.kairosgi.com/",
+            "address1": "Madero 889",
+            "phone": "(993) 385-6067"
         },
         {
             "name": "Sugar House Furniture",
