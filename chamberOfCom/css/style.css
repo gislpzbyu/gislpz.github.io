@@ -317,6 +317,7 @@ button {
   font-family: cursive;
   font-size: 20px;
   text-align: center;
+  border-radius: 20px;
 }
 
 .purpose {
@@ -330,15 +331,19 @@ padding: 0 70px;
 }
 
 /*Events*/
-
+.events {
+  background-color: pink;
+  margin: 10px;
+  padding: 20px;
+}
 /********************************** WEATHER **********************************/
-.weather{
-  padding: 30px;
+.weather {
+  padding: 5px;
   text-align:center;
 }
-.currentW img{
+.currentW img {
   display: inline;
-}
+} 
 .currentW p:nth-of-type(2){
   display: inline;
 }
@@ -350,7 +355,7 @@ padding: 0 70px;
   background-color: pink;
 }
 .w-card{
-  padding: 10px;
+  padding: 5px;
 }
 /*CITY EVENTS */ 
 /*Members Home*/
@@ -435,4 +440,64 @@ main#directory{
 }
 #local-b a{
   text-decoration: underline;
+}
+
+.home-contact{
+  background-color: beige;
+  margin: 15px;
+  padding: 20px;
+}
+
+.button {
+  background-color: pink;
+  width: 100px;
+}
+
+.member-perks {
+  background-color: plum;
+}
+
+
+.perks-table td{
+  font-family: var(--heading-font);
+  font-size: 20px;
+  color: var(--color1);
+  padding: 10px;
+  margin: 10px;
+}
+.perks-table td:nth-child(1){
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.director1 {
+  background-color: rosybrown;
+  margin: 10px;
+  padding: 10px;
+}
+
+.director2 {
+  background-color: rosybrown;
+  margin: 10px;
+  padding: 10px;
+}
+
+.paragraph1 {
+  text-align: center;
+}
+
+.home-contact {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+ header, body, footer, .event, .event_image, .five-columns, .form-container, .gallery, .header, .hero, .home-contact, .join, .logo .member, .member-gallery, .member-perks, .member_image, .nav, .one-column, .p-center, .social, .purpose, .container, .events, .event, .contact, .row1  {
+    display: block;
+    size: auto;
+
+  }
+
 }
