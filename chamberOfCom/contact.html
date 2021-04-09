@@ -18,20 +18,22 @@
       <p>Villahermosa, Tabasco</p>
     </section>
   </header>
-    <div>
-      <nav class="nav">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html" >Directory</a></li>
-        <li><a href="join.html" >Join</a></li>
-        <li><a href="contact.html" >Contact</a></li>
-      </nav>
-  </div>
+  <button onclick="toggle()">☰</button>
+  <div>
+    <nav class="nav" id="nav-hide" class="hide">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="city.html">City</a></li>
+      <li><a href="directory.html" >Directory</a></li>
+      <li><a href="join.html" >Join</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </nav>
+</div>
     <main class="container">
-    <section class="hero">
-      <picture class="hero-img">
-        <img src="images/hero.jpg" alt="sunny day" />
-      </picture>
+      <main class="container">
+        <section class="hero">
+    
+          <div class="welcome-hero"></div>
+    
       <div class="home-contact">
         <form method="get">
             <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z]{5}" required></label>
@@ -44,8 +46,8 @@
 <h2 class="title">Directors</h2>
 <section class="row">
     <div class="two-columns director1">
-      <img src="images/director1.jpg!d" alt="director">
-      <h3 class="title">Jose Garcia</h3>
+      <img src="images/director1.jpg" alt="director">
+      <h3 class="title">Antonio Garcia</h3>
       <p class="paragraph1">Wealth Generator</p>
       <p class="paragraph1">CEO</p>
       <p class="paragraph1">(993) 385 6067</p>
@@ -90,6 +92,7 @@
       <br />
       <span id="currentday"></span>
     </footer>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

@@ -18,20 +18,22 @@
       <p>Villahermosa, Tabasco</p>
     </section>
   </header>
-    <div>
-      <nav class="nav">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html" >Directory</a></li>
-        <li><a href="join.html" >Join</a></li>
-        <li><a href="contact.html" >Contact</a></li>
-      </nav>
-  </div>
+  <button onclick="toggle()">☰</button>
+  <div>
+    <nav class="nav" id="nav-hide" class="hide">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="city.html">City</a></li>
+      <li><a href="directory.html" >Directory</a></li>
+      <li><a href="join.html" >Join</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </nav>
+</div>
     <main class="container">
-    <section class="hero">
-      <picture class="hero-img">
-        <img src="images/hero.jpg" alt="sunny day" />
-      </picture>
+      <main class="container">
+        <section class="hero">
+    
+          <div class="welcome-hero"></div>
+    
       <div class="city">
         <h2 class="title">Villahermosa, Tabasco</h2>
         <p>It is the capitol of the Free and Sovereign State of Tabasco, its main city, and is home to the state's largest population. The city is an important business center for the Mexican oil industry. In 2008, the city consisted of 33 colonias and fraccionamientos. Also known as La Esmeralda del Sureste (The Emerald of the Southeast), Villahermosa is a modern city rich in natural resources, in terms of both agriculture and farming. Commercially, the city is served by major merchants, such as Liverpool, Fábricas de Fráncia, Palacio de Hierro, Walmart, City Club, Soriana, Comercial Mexicana and Home Depot. All the major national banks are present in the city as well.<h3>
@@ -70,7 +72,7 @@
               reiciendis suscipit amet. Modi accusantium odio corporis dolorem? Voluptatum facere accusamus earum
               impedit quasi minima non quia consequatur, iusto sunt perferendis recusandae vel? Distinctio quae,
               officia.</p>
-              <img class = "event_image" src="images/event1.jpg">
+              <img class= "event_image" src="images/event1.jpg">
       </div>
       <div class="three-columns event">
         <h2 class="title">La Venta Museum</h2>
@@ -153,6 +155,7 @@
       <br />
       <span id="currentday"></span>
     </footer>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

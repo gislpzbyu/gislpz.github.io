@@ -18,15 +18,21 @@
       <p>Villahermosa, Tabasco</p>
     </section>
   </header>
-    <div>
-      <nav class="nav">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html" >Directory</a></li>
-        <li><a href="join.html" >Join</a></li>
-        <li><a href="contact.html" >Contact</a></li>
-      </nav>
-  </div>
+  <button onclick="toggle()">☰</button>
+  <div>
+    <nav class="nav" id="nav-hide" class="hide">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="city.html">City</a></li>
+      <li><a href="directory.html" >Directory</a></li>
+      <li><a href="join.html" >Join</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </nav>
+</div>
+<main class="container">
+  <section class="hero">
+
+    <div class="welcome-hero"></div>
+
   <main>
     <form method="get" action="/lesson8/thanks.html" class="grid">
       <div class="form-container">
@@ -175,6 +181,7 @@
       <br />
       <span id="currentday"></span>
     </footer>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

@@ -54,13 +54,6 @@
             "website": "http://www.photostudio.com/",
             "address1": "Centro 294",
             "phone": "(993) 135-4566"
-        },
-        {
-            "name": "Camera Store",
-            "logo": "member9.png",
-            "website": "https://camerastore.com/",
-            "address1": "Gregorio 183",
-            "phone": "(993) 345-2435"
         }
     ]
 }

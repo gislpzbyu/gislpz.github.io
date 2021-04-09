@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Document</title>
 </head>
 
 <body>
@@ -18,28 +18,44 @@
       <p>Villahermosa, Tabasco</p>
     </section>
   </header>
-    <div>
-      <nav class="nav">
-        <li><a href="home.html" class="active">Home</a></li>
-        <li><a href="city.html">City</a></li>
-        <li><a href="directory.html" >Directory</a></li>
-        <li><a href="join.html" >Join</a></li>
-        <li><a href="contact.html" >Contact</a></li>
-      </nav>
-      <main id="directory">
-       
-        <h1>Local Business Directory</h1>
-        <div class="switchB">
-            <button onclick="toggleDirectoryGrid()"><i class="fas fa-th fa-2x"></i> Grid</button><button onclick="toggleDirectoryList()"><i class="fas fa-list-ul fa-2x"></i> List</button>
-        </div>
-        <div id="local-b" class="grid"></div>
+  <button onclick="toggle()">☰</button>
+  <div>
+    <nav class="nav" id="nav-hide" class="hide">
+      <li><a href="home.html" class="active">Home</a></li>
+      <li><a href="city.html">City</a></li>
+      <li><a href="directory.html" >Directory</a></li>
+      <li><a href="join.html" >Join</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </nav>
+</div>
+<main class="container">
+  <section class="hero">
+
+    <div class="welcome-hero"></div>
+
+    <main id="directory">
+      <h1>Local Business Directory</h1>
+
+      <div class="button-group">
+        <button onclick="toggleDirectoryGrid()">Grid</button>
+        <button onclick="toggleDirectoryList()">List</button>
+      </div>
+
+
+      <div class="switchB">
+        <button onclick="toggleDirectoryGrid()"><i class="fas fa-th fa-2x"></i> Grid</button><button
+          onclick="toggleDirectoryList()"><i class="fas fa-list-ul fa-2x"></i> List</button>
+      </div>
+      <div id="local-b" class="grid"></div>
 
     </main>
 
 
-    <div class="contact">s
+    <div class="contact">
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1943345.3906605302!2d-92.5588219!3d17.95096585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1617854976106!5m2!1ses-419!2smx" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1943345.3906605302!2d-92.5588219!3d17.95096585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1617854976106!5m2!1ses-419!2smx"
+          width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <br />
       📍 Weather World
@@ -49,7 +65,7 @@
       ☎ 215-829-9999
       <br />
       ✉ weather@world.com
-      
+
       <div class="social">
         <a href="https://www.facebook.com" title="This links to our Facebook Page. Follow Us."><img
             src="images/facebook-icon.png" alt="Facebook Icon" /></a>
@@ -59,8 +75,8 @@
             src="images/instagram-icon.png" alt="Instagram Icon" /></a>
       </div>
     </div>
-  </main>
-  <footer>
+    </main>
+    <footer>
       &copy; 2021 | Giselle Lopez | Villahermosa |
       <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a>
       <br />
@@ -69,6 +85,7 @@
 
 
     <script src="js/directory.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>

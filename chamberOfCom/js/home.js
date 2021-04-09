@@ -1,74 +1,103 @@
-const currentApiURL = "https://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&appid=5669b37006ecb1bc65edc9fbf8775403";
-fetch(currentApiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
+const currentWeatherApi =
+  "https://api.openweathermap.org/data/2.5/weather?id=5780993&units=imperial&appid=5669b37006ecb1bc65edc9fbf8775403";
 
-   
-    let temp = jsObject.main.temp;
-    let high = jsObject.main.temp_max;
+const forecastApiURL =
+  "https://api.openweathermap.org/data/2.5/forecast?id=5780993&units=imperial&appid=159b64909a20d12c8a9f4243af9f627b";
 
-    //WEATHER SUMMARY
+const getCurrentWeather = () => {
+  fetch(currentWeatherApi)
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log(jsObject);
 
-    //document.getElementById('current').textContent = "Currently: " + jsObject.main.temp.toFixed(0) + "\xB0 F";
-    //document.getElementById('current-desc').textContent = jsObject.weather[0].description;
-    //document.getElementById('humidity').textContent = "Humidity: " + jsObject.main.humidity + "%";
+      let temp = jsObject.main.temp;
+      let high = jsObject.main.temp_max;
 
+      //WEATHER SUMMARY
 
-    let cardF = document.createElement('div');
-    let tempF = document.createElement('p');
-    let imgF = document.createElement('img');
-    let imgDes = document.createElement('p');
-    let hum = document.createElement('p');
-    
-    tempF.textContent = "Currently: " + jsObject.main.temp.toFixed(0) + "\xB0 F";
-    hum.textContent = "Humidity: " + jsObject.main.humidity + "%";
+      //document.getElementById('current').textContent = "Currently: " + jsObject.main.temp.toFixed(0) + "\xB0 F";
+      //document.getElementById('current-desc').textContent = jsObject.weather[0].description;
+      //document.getElementById('humidity').textContent = "Humidity: " + jsObject.main.humidity + "%";
 
-    const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    imgF.setAttribute('src', imagesrc);
-    imgF.setAttribute('alt', desc);
+      let cardF = document.createElement("div");
+      let tempF = document.createElement("p");
+      let imgF = document.createElement("img");
+      let imgDes = document.createElement("p");
+      let hum = document.createElement("p");
 
-    imgDes.textContent = desc;
-    
-    
-    cardF.appendChild(tempF);
-    cardF.appendChild(imgF);
-    cardF.appendChild(imgDes);
-    cardF.appendChild(hum);
+      let linebreak = document.createElement("br");
 
-    document.querySelector('div.currentW').appendChild(cardF);
-  });
+      imgF.className = 'currentWeatherImage';
 
-const forecastApiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5780993&units=imperial&appid=159b64909a20d12c8a9f4243af9f627b";
-fetch(forecastApiURL)
-  .then((response) => response.json())
-  .then((jsForecast) => {
-    console.log(jsForecast);
+      tempF.textContent = "Currently: " + jsObject.main.temp.toFixed(0) + "\xB0 F";
+      hum.textContent = "Humidity: " + jsObject.main.humidity + "%";
 
-    //5 DAY FORECAST
-    var i = 1;
-      for(var x=0; (i<2 || x<jsForecast.list.length); x++){
-        if(jsForecast.list[x].dt_txt.includes("18:00:00")){
-          let cardF = document.createElement('section');
-          let tempF = document.createElement('p');
-          let imgF = document.createElement('img');
+      const imagesrc =
+        "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation
+      const desc = jsObject.weather[0].description; // note how we reference the weather array
+      imgF.setAttribute("src", imagesrc);
+      imgF.setAttribute("alt", desc);
+
+      imgDes.textContent = desc;
+      
+
+      cardF.appendChild(tempF);
+      cardF.appendChild(imgF);
+      cardF.appendChild(linebreak)
+      cardF.appendChild(imgDes);
+      cardF.appendChild(hum);
+
+      document.querySelector("div.currentW").appendChild(cardF);
+    });
+};
+
+const getForecast = () => {
+  fetch(forecastApiURL)
+    .then((response) => response.json())
+    .then((jsForecast) => {
+      console.log(jsForecast);
+
+      //5 DAY FORECAST
+      var i = 1;
+      for (var x = 0; i < 2 || x < jsForecast.list.length; x++) {
+        if (jsForecast.list[x].dt_txt.includes("18:00:00")) {
+          let cardF = document.createElement("section");
+          let tempF = document.createElement("p");
+          let imgF = document.createElement("img");
+
+          imgF.className = 'ForecastImage'
           
-          tempF.textContent = jsForecast.list[x].main.temp.toFixed(0) + "\xB0 F";
 
-          const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[x].weather[0].icon + '.png';  // note the concatenation
-          const desc = jsForecast.list[x].weather[0].description;  // note how we reference the weather array
-          imgF.setAttribute('src', imagesrc);
-          imgF.setAttribute('alt', desc);
-          
+          // imgF.style.width = '';
+
+          tempF.textContent =
+            jsForecast.list[x].main.temp.toFixed(0) + "\xB0 F";
+
+          const imagesrc =
+            "https://openweathermap.org/img/w/" +
+            jsForecast.list[x].weather[0].icon +
+            ".png"; // note the concatenation
+          const desc = jsForecast.list[x].weather[0].description; // note how we reference the weather array
+          imgF.setAttribute("src", imagesrc);
+          imgF.setAttribute("alt", desc);
+
           cardF.appendChild(imgF);
           cardF.appendChild(tempF);
-          
 
-          document.querySelector('div.threeDay' + i).appendChild(cardF);
-          
-          i++; 
+          document.querySelector("div.threeDay" + i).appendChild(cardF);
+
+          i++;
         }
       }
-  });
+    });
+};
 
+getCurrentWeather();
+getForecast();
+
+function toggle() {
+  console.log('Toggle');  
+  document.getElementById("nav-hide").classList.toggle("hide");
+}
+
+document.write("Last Updated: " + document.lastModified +""); 
