@@ -1,8 +1,8 @@
 {
     "businesses": [
         {
-            "name": "Alpha Graphics",
-            "logo": "alpha-logo.png",
+            "name": "Kairos",
+            "logo": "member1.png",
             "website": "https://www.alphagraphics.com/",
             "address1": "2945 South West Temple",
             "address2": "Salt Lake City, UT 84115",
@@ -10,7 +10,7 @@
         },
         {
             "name": "Sugar House Furniture",
-            "logo": "sugar-logo.jpg",
+            "logo": "kairos.png",
             "website": "https://www.sugarhousefurniture.com/",
             "address1": "2198 South Highland Drive",
             "address2": "Salt Lake City, UT 84106",
