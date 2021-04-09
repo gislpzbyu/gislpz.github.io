@@ -404,43 +404,7 @@ padding: 0 70px;
   background-color:pink;
 }
 
-main#directory{
-  max-width: 1200px;
-  padding: 50px 20px;
-}
-.switchB{
-  display: none;
-}
-.switchB button{
-  border: none;
-  background-color: var(--color5);
-  color: var(--color1);
-  font-family: var(--paragraph-font);
-}
-#local-b{
-  margin: 0 auto;
-}
-#local-b.grid{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-}
-#local-b.list{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-}
-#local-b section{
-  border: 1px solid var(--color1);
-  padding: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
-}
-#local-b img{
-  max-height: 100px;
-}
-#local-b a{
-  text-decoration: underline;
-}
+
 
 .home-contact{
   background-color: beige;
@@ -494,10 +458,47 @@ main#directory{
 }
 
 @media only screen and (max-width: 600px) {
- header, body, footer, .event, .event_image, .five-columns, .form-container, .gallery, .header, .hero, .home-contact, .join, .logo .member, .member-gallery, .member-perks, .member_image, .nav, .one-column, .p-center, .social, .purpose, .container, .events, .event, .contact, .row1  {
+ header, body, footer, .event, .event_image, .five-columns, .form-container, .gallery, .header, .hero, .home-contact, .join, .logo .member, .member-gallery, .member-perks, .member_image, .nav, .one-column, .p-center, .social, .purpose, .container, .events, .event, .contact, .row1{
     display: block;
     size: auto;
 
   }
+}
 
+main#directory{
+  max-width: 1200px;
+  padding: 50px 20px;
+}
+.switchB{
+  display: none;
+}
+.switchB button{
+  border: none;
+  background-color: var(--color5);
+  color: var(--color1);
+  font-family: var(--paragraph-font);
+}
+#local-b{
+  margin: 0 auto;
+}
+#local-b.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+#local-b.list{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+#local-b section{
+  border: 1px solid var(--color1);
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+#local-b img{
+  max-height: 100px;
+}
+#local-b a{
+  text-decoration: underline;
 }
