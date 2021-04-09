@@ -1,76 +1,66 @@
 {
     "businesses": [
         {
-            "name": "Kairos",
+            "name": "Pizzoleros",
             "logo": "member1.png",
-            "website": "https://www.alphagraphics.com/",
-            "address1": "2945 South West Temple",
-            "address2": "Salt Lake City, UT 84115",
-            "phone": "(801) 461-0500"
+            "website": "https://www.pizzoleros.com/",
+            "address1": "Senda de Guayacán 856",
+            "phone": "(993) 395-7846"
         },
         {
-            "name": "Sugar House Furniture",
+            "name": "Bakery Land",
             "logo": "member2.png",
-            "website": "https://www.sugarhousefurniture.com/",
-            "address1": "2198 South Highland Drive",
-            "address2": "Salt Lake City, UT 84106",
-            "phone": "(801) 485-3606"
+            "website": "https://www.bakeryland.com/",
+            "address1": "596 Madero",
+            "phone": "(993) 127-9193"
         },
         {
-            "name": "The King's English Bookshop",
+            "name": "The Donut Bar",
             "logo": "member3.png",
-            "website": "https://www.kingsenglish.com/",
-            "address1": "1511 South 1500 East",
-            "address2": "Salt Lake City, UT 84105",
-            "phone": "(801) 484-9100"
+            "website": "https://www.donutbar.com/",
+            "address1": "Parrilla 1023",
+            "phone": "(993) 341-6789"
         },
         {
-            "name": "Solstice Home Health, Hospice & Palliative Care",
+            "name": "The Burger Factory",
             "logo": "member4.png",
-            "website": "https://www.solsticehc.com/",
-            "address1": "1940 South 1100 East",
-            "address2": "Salt Lake City, UT 84106",
-            "phone": "(801) 485-1035"
+            "website": "https://www.burgerfactory.com/",
+            "phone": "(993) 234-1244"
         },
         {
-            "name": "Hatch Family Chocolates",
+            "name": "Fruit and Veggies",
             "logo": "member5.png",
-            "website": "https://www.hatchfamilychocolates.com/",
-            "address1": "376 8th Avenue, Unit A",
-            "address2": "Salt Lake City, UT 84103",
-            "phone": "(801) 532-4912"
+            "website": "https://www.fruitandveggies.com/",
+            "address1": "Centro 193",
+            "phone": "(993) 266-1642"
         },
         {
-            "name": "Street Tacos SLC",
+            "name": "Makeup For You",
             "logo": "member6.png",
-            "website": "https://streettacosut.com/",
-            "address1": "243 W 400 S",
-            "address2": "Salt Lake City, UT 84101",
-            "phone": "(801) 364-0249"
+            "website": "https://makeupforyou.com/",
+            "address1": "Celaya 2959",
+            "phone": "(993) 167-4573"
         },
         {
-            "name": "Central Book Exchange",
+            "name": "Cleansy",
             "logo": "member7.png",
-            "website": "https://www.central-bookexchange.com/",
-            "address1": "2017 S 1100 E",
-            "address2": "Salt Lake City, UT 84106",
-            "phone": "(801) 485-3913"
+            "website": "https://www.cleansy.com/",
+            "address1": "Paseo Tropical 395",
+            "phone": "(993) 123-5673"
         },
         {
-            "name": "The Machine Age",
+            "name": "Photo Studio",
             "logo": "member8.png",
-            "website": "http://www.trolleysquare.com/the-machine-age/",
-            "address1": "602 S 700 E",
-            "address2": "Salt Lake City, UT 84102",
-            "phone": "(801) 359-2020"
+            "website": "http://www.photostudio.com/",
+            "address1": "Centro 294",
+            "phone": "(993) 135-4566"
         },
         {
-            "name": "Délice French Bakery & Cafe",
+            "name": "Camera Store",
             "logo": "member9.png",
-            "website": "https://delicebakeryslc.com/",
-            "address1": "2747 S. State Street",
-            "address2": "Salt Lake City, UT 84115",
-            "phone": "(801) 953-1910"
+            "website": "https://camerastore.com/",
+            "address1": "Gregorio 183",
+            "phone": "(993) 345-2435"
         }
     ]
 }
