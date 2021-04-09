@@ -61,3 +61,12 @@ fetch(requestURL)
         document.querySelector('div#local-b').appendChild(card);
     }
   });
+
+  
+function toggleDirectoryGrid(){
+  document.getElementById("local-b").className = "grid";
+}
+
+function toggleDirectoryList(){
+  document.getElementById("local-b").className = "list";
+}
